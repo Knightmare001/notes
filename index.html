@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Journal App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="dark_mode">
+    <header class="flex-spaceAround">
+      <div></div>
+      <div>
+        <h1 style="color: white">My Notes</h1>
+      </div>
+      <i
+        id="lightId"
+        class="bi bi-brightness-high-fill"
+        style="font-size: 20px; color: white"
+      ></i>
+    </header>
+    <main>
+      <div class="container-content">
+        <div>
+          <textarea id="title" placeholder="Write the title here..."></textarea>
+        </div>
+        <textarea
+          id="content"
+          placeholder="Write your notes here..."
+          cols="40"
+        ></textarea>
+        <div class="btn">
+          <button id="save-btn">Save</button>
+          <button id="delete-btn">Delete</button>
+        </div>
+      </div>
+      <div class="container-records">
+        <h2>Your Records</h2>
+        <div id="records"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="flex-center" style="padding: 10px; margin-top: 70px">
+        <p>@created by Egi Prayogi</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
